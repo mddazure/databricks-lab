@@ -29,7 +29,7 @@ Deploy the bicep template:
 
 ## Components
 
-All components are deployed in a single Resource Group named *databricks-lab*.
+All components are deployed in a single Resource Group named *databricks-lab*, and Databricks adds a managed Resource Group named *databricks-rg-dbws-{unigueid}*
 
 The deployment does not contain a cluster, this is deployed from the Workspace portal.
 
