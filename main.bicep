@@ -19,7 +19,7 @@ param adminUsername string = 'AzureAdmin'
 
 param adminPassword string = 'Databricks-2022'
 
-param storageaccountname string = '${storagePrefix}${uniqueString(rgName)}-${utcNow()}'
+param storageaccountname string = '${storagePrefix}${utcNow()}'
 
 param workSpaceId string = 'fb5ad8ac-d19c-4754-8a33-fb1d3fa3fc37'
 param workSpaceRegion string = 'westeurope'
