@@ -21,9 +21,9 @@ param adminPassword string = 'Databricks-2022'
 
 param storageaccountname string = '${storagePrefix}${uniqueString(rgName)}'
 
-param workSpaceId string = 'fb5ad8ac-d19c-4754-8a33-fb1d3fa3fc37'
+param workSpaceId string = '915c4396-965d-4b9c-821f-182a27260c8a'
 param workSpaceRegion string = 'westeurope'
-param workSpaceResourceId string = '/subscriptions/0245be41-c89b-4b46-a3cc-a705c90cd1e8/resourcegroups/defaultresourcegroup-weu/providers/microsoft.operationalinsights/workspaces/defaultworkspace-0245be41-c89b-4b46-a3cc-a705c90cd1e8-weu'
+param workSpaceResourceId string = '/subscriptions/7749fbb8-4096-4e85-8ad2-ef8182d01f02/resourceGroups/laworkspace-rg/providers/Microsoft.OperationalInsights/workspaces/ext1-la-workspace-we'
 
 targetScope = 'subscription'
  
