@@ -327,11 +327,11 @@ resource vm 'Microsoft.Compute/virtualMachines@2020-12-01' = {
     }
     storageProfile:  {
       imageReference: {
-        id: imageId
-        //publisher: imagePublisher
-        //offer: imageOffer
-        //sku: imageSku
-        //version: 'latest'
+        //id: imageId
+        publisher: imagePublisher
+        offer: imageOffer
+        sku: imageSku
+        version: 'latest'
       }
       osDisk: {
         createOption: 'FromImage'      
