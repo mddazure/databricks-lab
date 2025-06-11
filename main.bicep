@@ -1,7 +1,7 @@
 param rgName string = 'databricks-lab-${utcNow()}'
 param flowlogrgName string = 'NetworkWatcherRG'
 
-param location string = 'westeurope'
+param location string = 'swedencentral'
 
 param dbvnetv4AddressRange string = '10.0.0.0/16'
 param VMSubnetv4AddressRange string = '10.0.0.0/24'
@@ -22,7 +22,7 @@ param adminPassword string = 'Databricks-2022'
 param storageaccountname string = '${storagePrefix}${uniqueString(rgName)}'
 
 param workSpaceId string = '915c4396-965d-4b9c-821f-182a27260c8a'
-param workSpaceRegion string = 'westeurope'
+param workSpaceRegion string = 'swedencentral'
 param workSpaceResourceId string = '/subscriptions/7749fbb8-4096-4e85-8ad2-ef8182d01f02/resourceGroups/laworkspace-rg/providers/Microsoft.OperationalInsights/workspaces/ext1-la-workspace-we'
 
 targetScope = 'subscription'

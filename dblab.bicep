@@ -19,8 +19,8 @@ param managedResourceGroupName string
 var vmName = 'testvm'
 var imagePublisher = 'MicrosoftWindowsServer'
 var imageOffer = 'WindowsServer'
-var imageSku = '2019-Datacenter'
-var imageId = '/subscriptions/0245be41-c89b-4b46-a3cc-a705c90cd1e8/resourceGroups/image-gallery-rg/providers/Microsoft.Compute/galleries/mddimagegallery/images/windows2019-networktools/versions/2.0.0'
+var imageSku = '2022-Datacenter'
+var imageId = '/subscriptions/0245be41-c89b-4b46-a3cc-a705c90cd1e8/resourceGroups/image-gallery-rg/providers/Microsoft.Compute/galleries/mddimagegallery/images/windows2022-networktools/versions/2.0.0'
 
 //var managedResourceGroupName = concat('databricks-rg-', clustername, '-', uniqueString(clustername), resourceGroup().id)
 var managedResourceGroupId =  '${subscription().id}/resourceGroups/${managedResourceGroupName}'
@@ -323,7 +323,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2020-12-01' = {
   location: location
   properties: {
     hardwareProfile:{
-      vmSize: 'Standard_DS2_v2'
+      vmSize: 'Standard_D2ds_v5'
     }
     storageProfile:  {
       imageReference: {
